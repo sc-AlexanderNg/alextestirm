@@ -1,0 +1,82 @@
+.solutions-navigation {
+  min-height: 72px;
+  padding: 10px 20px;
+  display: flex;
+  width: 100dvw;
+}
+
+@media screen and (width >= 1280px) {
+  .solutions-navigation {
+    padding: 10px 100px;
+  }
+}
+
+.solutions-navigation[data-theme='white'] {
+  background-color: white;
+  color: var(--color-im-grey);
+}
+
+.solutions-navigation[data-theme='dark-blue'] {
+  background-color: #00467f;
+  color: white;
+}
+
+.solutions-navigations-left {
+  width: 50%;
+  float: left;
+}
+
+.solutions-navigations-right {
+  width: 50%;
+  float: right;
+  visibility: hidden;
+}
+
+@media screen and (width >= 768px) {
+  .solutions-navigations-right {
+    visibility: visible;
+  }
+}
+
+.logo1-image {
+  width: 180px;
+  height: 53px;
+}
+
+.logo2-image {
+  width: 180px;
+  height: 53px;
+  float: right;
+}
+
+.solutions-navigation .solutions-navigations-phone {
+  float: right;
+  margin-top: 15px;
+}
+
+.solutions-navigation .solutions-navigations-phone h4 {
+  font-size: 20px;
+  margin-bottom: 11px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.solutions-navigation .solutions-navigations-phone a {
+  font-size: 20px;
+}
+
+.solutions-navigation[data-theme='dark-blue'] .solutions-navigations-phone h4 {
+  color: #fff;
+}
+
+.solutions-navigation[data-theme='white'] .solutions-navigations-phone h4 {
+  color: var(--color-im-grey);
+}
+
+.solutions-navigation[data-theme='white'] .solutions-navigations-phone a {
+  color: var(--color-im-grey);
+}
+
+.solutions-navigation[data-theme='dark-blue'] .solutions-navigations-phone a {
+  color: white;
+}
